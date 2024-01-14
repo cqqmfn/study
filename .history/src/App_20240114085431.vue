@@ -2,18 +2,16 @@
  <!-- html -->
  <div class="app">
   <h1>你好啊</h1>
-  <Person/>
  </div>
 </template>
 
 <script lang="ts">
-  import Person from './components/Person.vue'
-   // JS或TS
-   // export default:默认暴露
-   export default {
-    name: 'App', //组件名
-    components:{Person} //注册组件
-   }
+import Person from 
+ // JS或TS
+ // export default:默认暴露
+ export default {
+  name: 'App' //组件名
+ }
 </script>
 
 <style>

@@ -2,7 +2,6 @@
  <!-- html -->
  <div class="app">
   <h1>你好啊</h1>
-  <Person/>
  </div>
 </template>
 
@@ -12,7 +11,7 @@
    // export default:默认暴露
    export default {
     name: 'App', //组件名
-    components:{Person} //注册组件
+    
    }
 </script>
 

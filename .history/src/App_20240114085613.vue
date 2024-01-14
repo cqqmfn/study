@@ -2,7 +2,7 @@
  <!-- html -->
  <div class="app">
   <h1>你好啊</h1>
-  <Person/>
+  Per
  </div>
 </template>
 
