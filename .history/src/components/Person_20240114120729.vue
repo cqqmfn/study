@@ -14,20 +14,17 @@
    
   export default {
     name:'Person',
-    beforeCreate(){
-      console.log('beforeCreate')
-    },
     setup(){
-      console.log('setup')
-     // console.log(this) //setup函数中的this是undefined,Vue3中已经弱化this了
-     // 数据：直接定义变量
-     let name = '张三'//原来是写在data中的，注意此时的name、data、tel不是响应式的
-     let age = 18
-     let tel = '15688800000'
-     //方法：函数
+     // console.log('@@',this) //setup函数中的this是undefined
+     // 数据
+     let name = '张三'//注意此时的name不是响应式的
+     let age = 18//注意此时的age不是响应式的
+     let tel = '15688800000'//注意此时的tel不是响应式的
+
+     //方法
      function changeName (){
        console.log(1)
-       name = 'zhang-san' //注意：这样修改name、age、tel，页面是没有变化的,他们确实修改了，但都不是响应式的
+       name = 'zhang-san'
        console.log(name)
      }
      function changeAge (){
@@ -36,9 +33,7 @@
        console.log(age)
      }
      function showTel (){
-       console.log(3)
        alert(tel)
-       console.log(tel)
      }
 
      return {name,age,changeName,changeAge,showTel}

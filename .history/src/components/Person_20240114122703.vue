@@ -27,7 +27,7 @@
      //方法：函数
      function changeName (){
        console.log(1)
-       name = 'zhang-san' //注意：这样修改name、age、tel，页面是没有变化的,他们确实修改了，但都不是响应式的
+       name = 'zhang-san' //注意：这样修改name、age、tel，页面是
        console.log(name)
      }
      function changeAge (){

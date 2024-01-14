@@ -11,26 +11,30 @@
  </template>
  
  <script lang="ts">
-  
+   
   export default {
     name:'Person',
-    data(){
-      return {
-        name:'张三',
-        age:18,
-        tel:'15688800000'
-      }
-    },
-    methods:{
-      changeName(){
-       this.name = 'zhang-san'
-      },
-      changeAge(){
-       this.age += 1
-      },
-      showTel(){
-        alert(this.tel)
-      }
+    setup(){
+     // console.log('@@',this) //setup函数中的this是undefined
+     // 数据
+     let name = '张三'//注意此时的name不是响应式的
+     let age = 18//注意此时的age不是响应式的
+     let tel = '15688800000'//注意此时的tel不是响应式的
+
+     //方法
+     function changeName (){
+       console.log(1)
+       name = 'zhang-san'
+       console.log(1)
+     }
+     function changeAge (){
+       age += 1
+     }
+     function showTel (){
+       alert(tel)
+     }
+
+     return {name,age,changeName,changeAge,showTel}
     }
   }
  </script>

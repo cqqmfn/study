@@ -14,23 +14,9 @@
   
   export default {
     name:'Person',
-    data(){
-      return {
-        name:'张三',
-        age:18,
-        tel:'15688800000'
-      }
-    },
-    methods:{
-      changeName(){
-       this.name = 'zhang-san'
-      },
-      changeAge(){
-       this.age += 1
-      },
-      showTel(){
-        alert(this.tel)
-      }
+
+    setup(){
+
     }
   }
  </script>

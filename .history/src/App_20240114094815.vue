@@ -1,5 +1,6 @@
 <template>
   <Person/>
+  
 </template>
 
 <script lang="ts">

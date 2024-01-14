@@ -11,26 +11,27 @@
  </template>
  
  <script lang="ts">
-  
+   /* 注释内容 */ 
+   //
   export default {
     name:'Person',
-    data(){
-      return {
-        name:'张三',
-        age:18,
-        tel:'15688800000'
-      }
-    },
-    methods:{
-      changeName(){
-       this.name = 'zhang-san'
-      },
-      changeAge(){
-       this.age += 1
-      },
-      showTel(){
-        alert(this.tel)
-      }
+    setup(){
+      
+     let name = '张三'
+     let age = 18
+     let tel = '15688800000'
+
+     function changeName (){
+       name = 'zhang-san'
+     }
+     function changeAge (){
+       age += 1
+     }
+     function showTel (){
+       alert(tel)
+     }
+
+     return {name,age,changeName,changeAge,showTel}
     }
   }
  </script>

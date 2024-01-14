@@ -1,5 +1,7 @@
 <template>
   <Person/>
+  <Person/>
+  
 </template>
 
 <script lang="ts">
