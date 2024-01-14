@@ -42,10 +42,10 @@
      }
 
      // 将数据、方法交出去，模板中才可以使用
-     return {name,age,changeName,changeAge,showTel}
+     //return {name,age,changeName,changeAge,showTel}
 
-     // setup的返回值也可以是一个渲染函数
-     //return ()=>'哈哈'
+     // setup的返回值也可以是
+     return ()=>'哈哈'
     }
   }
  </script>

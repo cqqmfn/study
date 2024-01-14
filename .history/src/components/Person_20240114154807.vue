@@ -45,7 +45,7 @@
      return {name,age,changeName,changeAge,showTel}
 
      // setup的返回值也可以是一个渲染函数
-     //return ()=>'哈哈'
+     return ()=>'哈哈'
     }
   }
  </script>
