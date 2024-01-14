@@ -4,7 +4,6 @@
     <!-- 插值语法 -->
     <h2>姓名：{{name}}</h2>
     <h2>年龄：{{age}}</h2>
-    <h2>地址： {{ address }}</h2>
     <!-- 绑事件 -->
     <button @click="changeName">修改名字</button>
     <button @click="changeAge">修改年龄</button>
@@ -12,18 +11,18 @@
   </div>
  </template>
  
- <!-- <script lang="ts"> 
+ <script lang="ts"> 
   export default {
-    name:'Person234',
+    name:'Person',
   }
- </script> -->
+ </script>
  
- <script lang="ts" setup name="Person234">
+ <script lang="ts" setup>
      // 数据：直接定义变量
      let name = '张三'//原来是写在data中的，注意此时的name、data、tel不是响应式的
      let age = 18
      let tel = '15688800000'
-     let address = '桃花源'
+     //let x = this.d
 
      //方法：函数
      function changeName (){
@@ -41,7 +40,7 @@
        alert(tel)
        console.log(tel)
      }
-    //let a = 666
+    let a = 666
  </script>
 
  <style scoped>

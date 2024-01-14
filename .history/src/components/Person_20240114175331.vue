@@ -12,11 +12,11 @@
   </div>
  </template>
  
- <!-- <script lang="ts"> 
+ <script lang="ts"> 
   export default {
     name:'Person234',
   }
- </script> -->
+ </script>
  
  <script lang="ts" setup name="Person234">
      // 数据：直接定义变量

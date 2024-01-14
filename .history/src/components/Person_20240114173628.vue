@@ -12,18 +12,18 @@
   </div>
  </template>
  
- <!-- <script lang="ts"> 
+ <script lang="ts"> 
   export default {
-    name:'Person234',
+    name:'Person',
   }
- </script> -->
+ </script>
  
- <script lang="ts" setup name="Person234">
+ <script lang="ts" setup>
      // 数据：直接定义变量
      let name = '张三'//原来是写在data中的，注意此时的name、data、tel不是响应式的
      let age = 18
      let tel = '15688800000'
-     let address = '桃花源'
+     
 
      //方法：函数
      function changeName (){
