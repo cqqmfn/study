@@ -8,10 +8,7 @@
     <button @click="changeAge">修改年龄</button>
     <button @click="showTel">查看联系方式</button>
     <hr>
-    <h2>测试1: {{a}}</h2>
-    <h2>测试2: {{c}}</h2>
-    <h2>测试3: {{d}}</h2>
-    <button @click="b">测试</button>
+    <h2>测试: {{a}}</h2>
   </div>
  </template>
  
@@ -24,22 +21,17 @@
     },
     data(){
       return {
-        a: 100,
-        c: this.name,
-        d: 900
+        a: 100
       }
     },
-    methods:{
-      b(){
-        console.log('b')
-      }
+    method：{
+
     },
     setup(){
      // 数据：直接定义变量
      let name = '张三'//原来是写在data中的，注意此时的name、data、tel不是响应式的
      let age = 18
      let tel = '15688800000'
-     //let x = this.d
 
      //方法：函数
      function changeName (){

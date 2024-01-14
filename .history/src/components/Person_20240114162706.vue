@@ -26,7 +26,7 @@
       return {
         a: 100,
         c: this.name,
-        d: 900
+        d
       }
     },
     methods:{
@@ -39,7 +39,6 @@
      let name = '张三'//原来是写在data中的，注意此时的name、data、tel不是响应式的
      let age = 18
      let tel = '15688800000'
-     //let x = this.d
 
      //方法：函数
      function changeName (){
