@@ -22,10 +22,7 @@
      {id: '03',name:'三国志'}
      ])
 
-     let obj = reactive({x:999})
-     
-     console.log(car)
-     console.log(obj)
+let obj = reactive
      // 方法
      function changePrice(){
       car.value.price += 10

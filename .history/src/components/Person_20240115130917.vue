@@ -12,7 +12,7 @@
  </template>
  
  <script lang="ts" setup name="Person">
-     import {ref,reactive} from 'vue'
+     import {ref,react} from 'vue'
 
      // 数据
      let car = ref({brand:'奔驰',price:100})
@@ -22,10 +22,6 @@
      {id: '03',name:'三国志'}
      ])
 
-     let obj = reactive({x:999})
-     
-     console.log(car)
-     console.log(obj)
      // 方法
      function changePrice(){
       car.value.price += 10

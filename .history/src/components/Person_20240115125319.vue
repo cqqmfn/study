@@ -7,12 +7,12 @@
     <ul>
       <li v-for="g in games" :key="g.id">{{ g.name }}</li>
     </ul>
-    <button @click="changeFirstGame">修改第一个游戏的名字</button>
+    <!-- <button @click="changeFirstGame">修改第一个游戏的名字</button> -->
   </div>
  </template>
  
  <script lang="ts" setup name="Person">
-     import {ref,reactive} from 'vue'
+     import {ref} from 'vue'
 
      // 数据
      let car = ref({brand:'奔驰',price:100})
@@ -22,18 +22,14 @@
      {id: '03',name:'三国志'}
      ])
 
-     let obj = reactive({x:999})
-     
-     console.log(car)
-     console.log(obj)
      // 方法
-     function changePrice(){
-      car.value.price += 10
-      console.log(car.value.price)
-     }
-     function changeFirstGame(){
-      games.value[0].name = '王者荣耀'
-     }
+     //function changePrice(){
+     // car.price += 10
+     // console.log(car.price)
+     //}
+     //function changeFirstGame(){
+     // games[0].name = '王者荣耀'
+     //}
 
  </script>
 
