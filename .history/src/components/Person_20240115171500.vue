@@ -27,13 +27,11 @@
      function changeCar(){
       //car = {brand: '奥拓',price: 1}//这么写页面不更新
       //car = reactive({brand: '奥拓',price: 1})//这么写页面不更新
-      //这么写页面才更新
+      //这么写页面不更新
       Object.assign(car,{brand:'奥拓',price:1})
-      
      }
      function changeSum(){
       sum.value += 1
-      //sum = ref(9)
      }
  </script>
 

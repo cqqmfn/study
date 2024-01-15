@@ -14,26 +14,25 @@
      import {ref,reactive} from 'vue'
 
      // 数据
-     let car = reactive({brand:'奔驰',price:100})
+     let car = r({brand:'奔驰',price:100})
      let sum = ref(0)
 
      // 方法
      function changeBrand(){
-      car.brand = '宝马'
+      car.value.brand = '宝马'
      }
      function changePrice(){
-      car.price += 10
+      car.value.price += 10
      }
      function changeCar(){
       //car = {brand: '奥拓',price: 1}//这么写页面不更新
       //car = reactive({brand: '奥拓',price: 1})//这么写页面不更新
       //这么写页面才更新
-      Object.assign(car,{brand:'奥拓',price:1})
-      
+      //Object.assign(car,{brand:'奥拓',price:1})
+      car.value = {brand: '奥拓',price: 1}
      }
      function changeSum(){
       sum.value += 1
-      //sum = ref(9)
      }
  </script>
 

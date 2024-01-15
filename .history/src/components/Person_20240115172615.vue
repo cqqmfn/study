@@ -32,7 +32,7 @@
       
      }
      function changeSum(){
-      sum.value += 1
+      //sum.value += 1
       //sum = ref(9)
      }
  </script>
