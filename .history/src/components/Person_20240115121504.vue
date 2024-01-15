@@ -7,10 +7,7 @@
     <ul>
       <li v-for="g in games" :key="g.id">{{ g.name }}</li>
     </ul>
-    <button @click="changeFirstGame">修改第一个游戏的名字</button>
-    <hr>
-    <h2>测试：{{ obj.a.b.c }}</h2>
-    <button @click="changeObj">测试</button>
+    <button ></button>
   </div>
  </template>
  
@@ -19,18 +16,11 @@
 
      // 数据
      let car = reactive({brand:'奔驰',price:100})
-     let games = reactive([
+     let games = [
      {id: '01',name:'鹅鸦杀'},
      {id: '02',name:'原神'},
      {id: '03',name:'三国志'}
-     ])
-     let obj = reactive({
-      a: {
-        b: {
-          c: 666
-        }
-      }
-     })
+     ]
      //console.log(car)
      //console.log(Proxy)
 
@@ -38,12 +28,6 @@
      function changePrice(){
       car.price += 10
       console.log(car.price)
-     }
-     function changeFirstGame(){
-      games[0].name = '王者荣耀'
-     }
-     function changeObj(){
-      obj.a.b.c = 999
      }
 
  </script>

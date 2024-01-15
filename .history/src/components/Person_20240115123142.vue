@@ -10,7 +10,7 @@
     <button @click="changeFirstGame">修改第一个游戏的名字</button>
     <hr>
     <h2>测试：{{ obj.a.b.c }}</h2>
-    <button @click="changeObj">测试</button>
+    <button @click="changeObj"></button>
   </div>
  </template>
  
