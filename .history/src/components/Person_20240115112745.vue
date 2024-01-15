@@ -39,8 +39,8 @@
        console.log(name.value)
      }
      function changeAge (){
-       age.value += 1
-       console.log(age.value)
+       age += 1
+       console.log(age)
      }
      function showTel (){
        alert(tel)

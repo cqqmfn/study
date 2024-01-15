@@ -28,21 +28,20 @@
      let tel = '15688800000'
      let address = '桃花源'
 
-     console.log(1,name)
-     console.log(2,age)
-     console.log(3,tel)
-     console.log(4,address)
-
+console.log
      //方法：函数
      function changeName (){
-       name.value = 'zhang-san' //注意：这样修改name、age、tel，页面是没有变化的,他们确实修改了，但都不是响应式的
-       console.log(name.value)
+       console.log(1)
+       name = 'zhang-san' //注意：这样修改name、age、tel，页面是没有变化的,他们确实修改了，但都不是响应式的
+       console.log(name)
      }
      function changeAge (){
-       age.value += 1
-       console.log(age.value)
+       console.log(2)
+       age += 1
+       console.log(age)
      }
      function showTel (){
+       console.log(3)
        alert(tel)
        console.log(tel)
      }

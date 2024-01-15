@@ -35,14 +35,15 @@
 
      //方法：函数
      function changeName (){
-       name.value = 'zhang-san' //注意：这样修改name、age、tel，页面是没有变化的,他们确实修改了，但都不是响应式的
-       console.log(name.value)
+       name = 'zhang-san' //注意：这样修改name、age、tel，页面是没有变化的,他们确实修改了，但都不是响应式的
+       console.log(name)
      }
      function changeAge (){
-       age.value += 1
-       console.log(age.value)
+       age += 1
+       console.log(age)
      }
      function showTel (){
+
        alert(tel)
        console.log(tel)
      }

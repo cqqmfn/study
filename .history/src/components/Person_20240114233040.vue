@@ -20,29 +20,26 @@
  
  <script lang="ts" setup name="Person">
 
-     import {ref} from 'vue'
-     
+  import {ref} from 'vue'
      // 数据：直接定义变量
-     let name = ref('张三')//原来是写在data中的，注意此时的name、data、tel不是响应式的
-     let age = ref(18)
+     let name = '张三'//原来是写在data中的，注意此时的name、data、tel不是响应式的
+     let age = 18
      let tel = '15688800000'
      let address = '桃花源'
 
-     console.log(1,name)
-     console.log(2,age)
-     console.log(3,tel)
-     console.log(4,address)
-
      //方法：函数
      function changeName (){
-       name.value = 'zhang-san' //注意：这样修改name、age、tel，页面是没有变化的,他们确实修改了，但都不是响应式的
-       console.log(name.value)
+       console.log(1)
+       name = 'zhang-san' //注意：这样修改name、age、tel，页面是没有变化的,他们确实修改了，但都不是响应式的
+       console.log(name)
      }
      function changeAge (){
-       age.value += 1
-       console.log(age.value)
+       console.log(2)
+       age += 1
+       console.log(age)
      }
      function showTel (){
+       console.log(3)
        alert(tel)
        console.log(tel)
      }
