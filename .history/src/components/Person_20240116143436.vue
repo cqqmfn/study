@@ -32,10 +32,8 @@
     get(){
       return firstName.value.slice(0,1).toUpperCase() + firstName.value.slice(1) + '-' + lastName.value
     },
-    set(val){
-      const [str1,str2] = val.split('-')
-      firstName.value = str1
-      lastName.value = str2
+    set(){
+      con
     }
    })
 

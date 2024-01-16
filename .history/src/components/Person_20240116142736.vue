@@ -22,21 +22,15 @@
    //}
 
    // 这么定义的fullName是一个计算属性，且是只读的
-   /*let fullName = computed(()=>{
+   //let fullName = computed(()=>{
+    //console.log(1)
+   // return firstName.value.slice(0,1).toUpperCase() + firstName.value.slice(1) + '-' + lastName.value
+   //})
+
+   // 这么定义的fullName是一个计算属性，且是只读的
+   let fullName = computed(()=>{
     //console.log(1)
     return firstName.value.slice(0,1).toUpperCase() + firstName.value.slice(1) + '-' + lastName.value
-   })*/
-
-   // 这么定义的fullName是一个计算属性，可读可写
-   let fullName = computed({
-    get(){
-      return firstName.value.slice(0,1).toUpperCase() + firstName.value.slice(1) + '-' + lastName.value
-    },
-    set(val){
-      const [str1,str2] = val.split('-')
-      firstName.value = str1
-      lastName.value = str2
-    }
    })
 
    function changeFullName(){

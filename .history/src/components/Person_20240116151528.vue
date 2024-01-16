@@ -34,8 +34,7 @@
     },
     set(val){
       const [str1,str2] = val.split('-')
-      firstName.value = str1
-      lastName.value = str2
+      first
     }
    })
 
