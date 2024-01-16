@@ -1,14 +1,14 @@
 <template>
   <div class="person">
-  <h2>姓名:{{ person.name }}</h2>
-  <h2>年龄:{{ person.age }},{{ nl }}</h2>
+  <h2>姓名:{{ name }}</h2>
+  <h2>年龄:{{ age }}</h2>
   <button @click="changeName">修改名字</button>
   <button @click="changeAge">修改年龄</button>
   </div>
  </template>
  
  <script lang="ts" setup name="Person">
-  import {reactive,toRefs,toRef} from 'vue' 
+  import {reactive,toRefs} from 'vue' 
 
   // 数据
   let person = reactive ({
@@ -16,17 +16,17 @@
     age:18
   })
 
-   let {name,age} = toRefs(person)
-   let nl = toRef(person,'age')
-   //console.log(nl.value)
+   let {name,age} = toRefs（）person
+   //console.log(name,age)
 
   // 方法
   function changeName(){
-    name.value += '~'
-    console.log(name.value,person.name)
+    name += '~'
+    console.log(name,person.name)
   }
   function changeAge(){
-    age.value += 1
+    age += 1
+    console.log(age)
   }
  </script>
 

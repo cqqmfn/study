@@ -18,7 +18,7 @@
 
    let {name,age} = toRefs(person)
    let nl = toRef(person,'age')
-   //console.log(nl.value)
+   console.log(nl.value)
 
   // 方法
   function changeName(){
