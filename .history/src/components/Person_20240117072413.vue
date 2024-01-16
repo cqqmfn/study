@@ -14,14 +14,10 @@ let sum = ref(0)
 function changeSum(){
   sum.value += 1
 }
-// 监视,情况一：监视【ref】定义的【基本类型】数据
-const stopWatch = watch(sum,(newValue,oldValue)=>{
+// 监视
+watch(sum,(newValue,oldValue)=>{
   console.log('sum变化了',newValue,oldValue)
-  if(newValue >= 10){
-    stopWatch()
-  }
 })
-console.log(stopWatch)
  </script>
 
  <style scoped>

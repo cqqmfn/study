@@ -1,6 +1,6 @@
 <template>
   <div class="person">
-    姓：<input type="text" v-model="firstName"><br>
+    xing：<input type="text" v-model="firstName"><br>
     名：<input type="text" v-model="lastName"><br>
     <button @click="changeFullName">将全名改为li-si</button><br>
     全名：<span>{{fullName}}</span><br>

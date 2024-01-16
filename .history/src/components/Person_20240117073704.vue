@@ -18,7 +18,7 @@ function changeSum(){
 const stopWatch = watch(sum,(newValue,oldValue)=>{
   console.log('sum变化了',newValue,oldValue)
   if(newValue >= 10){
-    stopWatch()
+    stopWatch
   }
 })
 console.log(stopWatch)
