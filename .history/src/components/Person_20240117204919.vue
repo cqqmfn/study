@@ -6,9 +6,6 @@
     <button @click="changeName">修改名字</button>
     <button @click="changeAge">修改年龄</button>
     <button @click="changePerson">修改整个人</button>
-    <hr>
-    <h2>测试：{{ obj.a.b.c }}</h2>
-    <button @click="test">修改obj.a.b.c</button>
   </div>
  </template>
  
@@ -19,13 +16,6 @@
       name: '张三',
       age: 18
     })
-    let obj = reactive({
-      a:{
-        b:{
-          c:666
-        }
-      }
-    })
     // 方法
     function changeName(){
       person.name += '~'
@@ -34,21 +24,11 @@
       person.age += 1
     }
     function changePerson(){
-      // reactive是不能整体修改的，所以下面是无效的
-      // person = reactive({name:'李四',age:90})
-      // 要这么改才有效果,但是只是批量更改（属性名相同，值覆盖了），人还是那个人，对比14节的ref
+      // reactive是不能整体修改的，所以
+      person = reactive({name:'李四',age:90})
       Object.assign(person,{name:'李四',age:80})
     }
-    function test(){
-      obj.a.b.c = 888
-    }
-    // 监视，情况三：监视【reactive】定义的【对象类型】数据，且默认是开启深度监视的（person任意属性修改都会监测到，且是关不掉的,但我的浏览器能关掉，很奇怪）
-    watch(person,(newValue,oldValue)=>{
-      console.log('person变化了',newValue,oldValue)
-    })
-    watch(obj,(newValue,oldValue)=>{
-      console.log('Obj变化了',newValue,oldValue)
-    },{deep:false})
+
  </script>
 
  <style scoped>

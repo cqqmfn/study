@@ -39,16 +39,11 @@
       // 要这么改才有效果,但是只是批量更改（属性名相同，值覆盖了），人还是那个人，对比14节的ref
       Object.assign(person,{name:'李四',age:80})
     }
-    function test(){
-      obj.a.b.c = 888
-    }
-    // 监视，情况三：监视【reactive】定义的【对象类型】数据，且默认是开启深度监视的（person任意属性修改都会监测到，且是关不掉的,但我的浏览器能关掉，很奇怪）
+    function test()
+    // 监视，情况三：监视【reactive】定义的【对象类型】数据，且默认是开启深度监视的
     watch(person,(newValue,oldValue)=>{
       console.log('person变化了',newValue,oldValue)
     })
-    watch(obj,(newValue,oldValue)=>{
-      console.log('Obj变化了',newValue,oldValue)
-    },{deep:false})
  </script>
 
  <style scoped>

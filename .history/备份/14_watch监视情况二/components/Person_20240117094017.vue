@@ -24,7 +24,7 @@
       person.value.age += 1
     }
     function changePerson(){
-      person.value = {name:'李四',age:90}//真正把人替换了
+      person.value = {name:'李四',age:90}
     }
     /*监视，情况二：监视【ref】定义的【对象类型】数据，监视的是对象的地址值，若想监视对象内部属性的变化，需要手动开启深度监视
       watch的第一个参数是：被监视的数据

@@ -1,6 +1,6 @@
 <template>
   <div class="person">
-    <h1>情况二：监视【ref】定义的【对象类型】数据</h1>
+    <h1>情况三：监视【reactive】定义的【对象类型】数据</h1>
     <h2>姓名：{{ person.name }}</h2>
     <h2>年龄：{{ person.age }}</h2>
     <button @click="changeName">修改名字</button>
@@ -10,30 +10,34 @@
  </template>
  
  <script lang="ts" setup name="Person">
-    import {ref,watch} from 'vue'
+    import {reactive,watch} from 'vue'
     // 数据
-    let person = ref({
+    let person = reactive({
       name: '张三',
       age: 18
     })
+    let obj = reactive({
+      a;{
+      
+      }
+    })
     // 方法
     function changeName(){
-      person.value.name += '~'
+      person.name += '~'
     }
     function changeAge(){
-      person.value.age += 1
+      person.age += 1
     }
     function changePerson(){
-      person.value = {name:'李四',age:90}//真正把人替换了
+      // reactive是不能整体修改的，所以下面是无效的
+      // person = reactive({name:'李四',age:90})
+      // 要这么改才有效果,但是只是批量更改（属性名相同，值覆盖了），人还是那个人，对比14节的ref
+      Object.assign(person,{name:'李四',age:80})
     }
-    /*监视，情况二：监视【ref】定义的【对象类型】数据，监视的是对象的地址值，若想监视对象内部属性的变化，需要手动开启深度监视
-      watch的第一个参数是：被监视的数据
-      watch的第二个参数是：监视的回调
-      watch的第三个参数是：配置对象（deep、immediate等等）
-    */
+    // 监视，情况三：监视【reactive】定义的【对象类型】数据，且默认是开启深度监视的
     watch(person,(newValue,oldValue)=>{
       console.log('person变化了',newValue,oldValue)
-    },{deep:true,immediate:true})
+    })
  </script>
 
  <style scoped>
