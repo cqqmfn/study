@@ -24,29 +24,21 @@
     })
     // 方法
     function changeName(){
-      person.name += '~'
+      person.name
     }
     function changeAge(){
-      person.age += 1
+      person.
     }
     function changeC1(){
-      person.car.c1 = '奥迪'
+      person.
     }
     function changeC2(){
-      person.car.c2 = '大众'
+      person.
     }
     function changeCar(){
-      person.car = {c1:'雅迪',c2:'爱玛'}
+      person.
     }
-    //监视，情况四：监视响应式对象中的某个属性，且该属性是基本类型的，要写成函数式
-    //只想监视某个值的时候得用getter函数:能返回一个值的函数
-    watch(()=>person.name,(newValue,oldValue)=>{
-      console.log('person.name变化了',newValue,oldValue)
-    })
-    //监视，情况四：监视响应式对象中的某个属性，且该属性是对象类型的，可以直接写，也能写函数（监视地址值），更推荐写函数
-    watch(()=>person.car,(newValue,oldValue)=>{
-      console.log('person.name变化了',newValue,oldValue)
-    },{deep:true})
+
  </script>
 
  <style scoped>
