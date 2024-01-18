@@ -1,6 +1,6 @@
 <template>
   <div class="person">
-   <h1>情况四：监视【ref】或【reactive】定义的【对象类型】数据中的某个属性</h1>
+   <h1>情况五：监视上述的多个数据</h1>
    <h2>姓名：{{ person.name}}</h2>
    <h2>年龄：{{ person.age}}</h2>
    <h2>汽车：{{ person.car.c1}}、{{ person.car.c2 }}</h2>
