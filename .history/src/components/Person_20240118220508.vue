@@ -2,7 +2,7 @@
   <div class="person">
     <h2>需求：当水温达到60度或水位达到80cm时，给服务器发请求</h2>
     <h2>当前水温：{{ temp }}℃</h2>
-    <h2>当前水位：{{ height }}cm</h2>
+    <h2>当前水温：{{ height }}cm</h2>
     <button @click="changeTemp">水温+10</button>
     <button @click="changeHeight">水位+10</button>
   </div>
