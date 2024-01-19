@@ -1,6 +1,6 @@
 <template>
   <h2 ref="title2">你好</h2>
-  <button @click="showLog">测试</button>
+  <button @click="showLog">点我输出h2这个元素</button>
   <Person ref="ren"/>
 </template>
 
@@ -9,11 +9,10 @@
   import {ref} from 'vue'
 
   let title2 = ref()
-  let ren = ref()
+  
 
   function showLog(){
-      // console.log(title2.value)
-      console.log(ren.value)
+      console.log(title2.value)
   }
 </script>
 

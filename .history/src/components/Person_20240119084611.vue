@@ -19,8 +19,6 @@
     function showLog(){
       console.log(title2.value)
     }
-
-    defineExpose({a,b,c})
  </script>
 
  <style scoped>

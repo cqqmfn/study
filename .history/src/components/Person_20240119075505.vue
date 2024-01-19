@@ -8,19 +8,12 @@
  </template>
  
  <script lang="ts" setup name="Person">
-  import {ref,defineExpose} from 'vue'
+  import {ref} from 'vue'
 
-  // 创建一个title2，用于存储ref标记的内容
-  let title2 = ref()
-  let a = ref(0)
-  let b = ref(1)
-  let c = ref(2)
-
+  // 创建
     function showLog(){
-      console.log(title2.value)
+      console.log()
     }
-
-    defineExpose({a,b,c})
  </script>
 
  <style scoped>

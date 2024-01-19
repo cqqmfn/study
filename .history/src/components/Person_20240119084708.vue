@@ -20,7 +20,7 @@
       console.log(title2.value)
     }
 
-    defineExpose({a,b,c})
+    defineExpose({})
  </script>
 
  <style scoped>
