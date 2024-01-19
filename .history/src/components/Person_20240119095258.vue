@@ -1,19 +1,23 @@
 <template>
   <div class="person">
-  ???
+
   </div>
  </template>
  
  <script lang="ts" setup name="Person">
-  import {type PersonInter,type Persons} from '@/types'
+  import {ref,defineExpose} from 'vue'
 
-  //let person:PersonInter = {id:'cc01',name:'张三',age:21}
+  // 创建一个title2，用于存储ref标记的内容
+  let title2 = ref()
+  let a = ref(0)
+  let b = ref(1)
+  let c = ref(2)
 
-  let personList:Persons = [
-    {id:'cc01',name:'张三',age:21},
-    {id:'cc02',name:'李四',age:22},
-    {id:'cc03',name:'王五',age:23}
-    ]
+    function showLog(){
+      console.log(title2.value)
+    }
+
+    defineExpose({a,b,c})
  </script>
 
  <style scoped>
