@@ -49,7 +49,7 @@
     font-size: 18px;
     letter-spacing: 5px;
   }
-  .navigate a.light {
+  .navigate a.xiaozhupeiqi {
     background-color: #64967E;
     color: #ffc268;
     font-weight: 900;
