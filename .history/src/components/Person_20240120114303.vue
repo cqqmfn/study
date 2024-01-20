@@ -30,15 +30,15 @@
   })
   // 更新完毕
   onUpdated(()=>{
-  //  console.log('更新完毕')
+    console.log('更新完毕')
   })
   // 卸载前
   onBeforeUnmount(()=>{
-  //  console.log('卸载前')
+    console.log('卸载前')
   })
   // 卸载完毕
   onUnmounted(()=>{
-  //  console.log('卸载完毕')
+    console.log('卸载完毕')
   })
  </script>
 

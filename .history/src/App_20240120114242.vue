@@ -10,7 +10,7 @@
 
     // 挂载完毕
     onMounted(()=>{
-    console.log('父---挂载完毕')
+    console.log('父挂载完毕')
   })
 </script>
 

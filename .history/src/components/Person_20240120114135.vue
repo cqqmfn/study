@@ -18,7 +18,7 @@
   console.log('创建')
   // 挂载前
   onBeforeMount(()=>{
-  //  console.log('挂载前')
+    console.log('挂载前')
   })
   // 挂载完毕
   onMounted(()=>{
@@ -26,19 +26,19 @@
   })
   // 更新前
   onBeforeUpdate(()=>{
-  //  console.log('更新前')
+    console.log('更新前')
   })
   // 更新完毕
   onUpdated(()=>{
-  //  console.log('更新完毕')
+    console.log('更新完毕')
   })
   // 卸载前
   onBeforeUnmount(()=>{
-  //  console.log('卸载前')
+    console.log('卸载前')
   })
   // 卸载完毕
   onUnmounted(()=>{
-  //  console.log('卸载完毕')
+    console.log('卸载完毕')
   })
  </script>
 
