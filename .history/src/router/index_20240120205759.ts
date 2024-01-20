@@ -9,7 +9,7 @@ import About from '@/pages/About.vue'
 
 // 第二步： 创建路由器
 const router = createRouter({
-  history:createWebHashHistory(),//路由器工作模式
+  history:createWebHistory(),//路由器工作模式
   routes:[ //一个一个的路由规则
    {
      path:'/home',
