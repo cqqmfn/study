@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <Header/>
+    <Header/>>
     <!-- 导航区 -->
     <div class="navigate">
       <RouterLink to="/home" active-class="light">首页</RouterLink>

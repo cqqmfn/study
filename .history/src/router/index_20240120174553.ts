@@ -4,8 +4,8 @@
 import {createRouter,createWebHistory} from 'vue-router'
 // 引入一个一个可能要呈现组件
 import Home from '@/pages/Home.vue'
-import News from '@/pages/News.vue'
-import About from '@/pages/About.vue'
+import News from '@//News.vue'
+import About from '@//About.vue'
 
 // 第二步： 创建路由器
 const router = createRouter({

@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <Header/>
+    
     <!-- 导航区 -->
     <div class="navigate">
       <RouterLink to="/home" active-class="light">首页</RouterLink>
@@ -16,11 +16,11 @@
 
 <script lang="ts" setup name="App">
   import {RouterView,RouterLink} from 'vue-router'
-  import Header from './components/Header.vue'
 </script>
 
 <style>
     /* App */
+
   .navigate {
     display: flex;
     justify-content: space-around;
