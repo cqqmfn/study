@@ -21,12 +21,7 @@ const router = createRouter({
     name:'two',
     path:'/news',
     component:News,
-    children:[
-      {
-        path:'detail',
-        component:Detail
-      }
-    ]
+    children:[]
    },
    {
     name:'three',
