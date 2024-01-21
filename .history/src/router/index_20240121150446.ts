@@ -22,7 +22,7 @@ const router = createRouter({
     component:News
    },
    {
-    name:'three',
+    name:'three'
     path:'/about',
     component:About
    }
