@@ -23,7 +23,7 @@ const router = createRouter({
     component:News,
     children:[
       {
-        name:'detailc',
+        name:'detailtse',
         path:'detail',
         component:Detail
       }

@@ -8,7 +8,7 @@
         <!-- 第二种写法：对象写法 -->
         <RouterLink 
            :to="{
-            name:'detailc',
+            path:'/news/detail',
             query:{
               id:news.id,
               title:news.title,
@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts" name="News">
-  // import { title } from 'process';
+  import { title } from 'process';
 import {reactive} from 'vue'
   import {RouterLink, RouterView} from 'vue-router'
 

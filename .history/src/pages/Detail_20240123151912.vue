@@ -7,10 +7,10 @@
 </template>
 
 <script setup lang="ts" name="About">
-  import {toRefs} from 'vue'
+  imp
   import {useRoute} from 'vue-router'
   let route = useRoute()
-  let {query} = toRefs(route)
+  let {query} = route
 </script>
 
 <style scoped>

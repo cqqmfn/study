@@ -8,7 +8,7 @@
         <!-- 第二种写法：对象写法 -->
         <RouterLink 
            :to="{
-            name:'detailc',
+            name:'',
             query:{
               id:news.id,
               title:news.title,

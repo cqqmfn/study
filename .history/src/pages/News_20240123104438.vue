@@ -3,21 +3,7 @@
     <!-- 导航区 -->
     <ul>
       <li v-for="news in newsList" :key="news.id">
-        <!-- 第一种写法 -->
-        <!-- <RouterLink :to="`/news/detail?id=${news.id}&title=${news.title}&content=${news.content}`">{{news.title}}</RouterLink> -->
-        <!-- 第二种写法：对象写法 -->
-        <RouterLink 
-           :to="{
-            name:'detailc',
-            query:{
-              id:news.id,
-              title:news.title,
-              content:news.content
-            }
-           }"
-        >
-          {{news.title}}
-        </RouterLink>
+        <RouterLink to="/news/detail">{{news.title}}</RouterLink>
         </li>
     </ul>
     <!-- 展示区 -->
@@ -28,15 +14,14 @@
 </template>
 
 <script setup lang="ts" name="News">
-  // import { title } from 'process';
-import {reactive} from 'vue'
+  import {reactive} from 'vue'
   import {RouterLink, RouterView} from 'vue-router'
 
   const newsList = reactive([
-    {id:'cc01',title:'很好的抗癌食物',content:'西兰花'},
-    {id:'cc02',title:'如何一夜暴富',content:'学IT'},
-    {id:'cc03',title:'震惊！万万没想到',content:'明天是周一'},
-    {id:'cc04',title:'好消息！好消息!',content:'快过年了'}
+    {id:'cc01',title:'很好的抗癌食物',content:'O(∩_∩)O'},
+    {id:'cc02',title:'如何一夜bao'fu',content:'(*^_^*)'},
+    {id:'cc03',title:'快要毕业了',content:'(●ˇ∀ˇ●)'},
+    {id:'cc04',title:'准备去旅行',content:'(￣▽￣)"'}
   ])
 </script>
 

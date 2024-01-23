@@ -6,18 +6,7 @@
         <!-- 第一种写法 -->
         <!-- <RouterLink :to="`/news/detail?id=${news.id}&title=${news.title}&content=${news.content}`">{{news.title}}</RouterLink> -->
         <!-- 第二种写法：对象写法 -->
-        <RouterLink 
-           :to="{
-            name:'detailc',
-            query:{
-              id:news.id,
-              title:news.title,
-              content:news.content
-            }
-           }"
-        >
-          {{news.title}}
-        </RouterLink>
+        <RouterLink :to="">{{news.title}}</RouterLink>
         </li>
     </ul>
     <!-- 展示区 -->
@@ -28,8 +17,7 @@
 </template>
 
 <script setup lang="ts" name="News">
-  // import { title } from 'process';
-import {reactive} from 'vue'
+  import {reactive} from 'vue'
   import {RouterLink, RouterView} from 'vue-router'
 
   const newsList = reactive([

@@ -10,7 +10,7 @@
   import {toRefs} from 'vue'
   import {useRoute} from 'vue-router'
   let route = useRoute()
-  let {query} = toRefs(route)
+  let {query} = toRefroute
 </script>
 
 <style scoped>
