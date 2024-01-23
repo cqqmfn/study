@@ -13,7 +13,8 @@
           params:{
             id:news.id,
             title:news.title,
-            //content:news.content,
+            content:news.content,
+            a:[1,3,5,7,9]
           }
         }"
         >
