@@ -3,7 +3,7 @@
     <!-- 导航区 -->
     <ul>
       <li v-for="news in newsList" :key="news.id">
-        <button @click="showNewsDetail(news)">查看新闻</button>
+        <button @click="showNewsDetail">查看新闻</button>
         <RouterLink 
         :to="{
           name:'detailc',
@@ -39,21 +39,8 @@ import {reactive} from 'vue'
 
   const router = useRouter()
 
-  interface NewsInter {
-    id:string,
-    title:string,
-    content:string
-  }
-
-  function showNewsDetail(news:NewsInter){
-    router.replace({
-      name:'detailc',
-      query:{
-        id:news.id,
-        title:news.title,
-        content:news.content,
-          }
-    })
+  function showNewsDetail(){
+    
   }
 </script>
 

@@ -45,8 +45,8 @@ import {reactive} from 'vue'
     content:string
   }
 
-  function showNewsDetail(news:NewsInter){
-    router.replace({
+  function showNewsDetail(news:any){
+    router.push({
       name:'detailc',
       query:{
         id:news.id,

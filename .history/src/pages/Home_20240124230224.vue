@@ -10,12 +10,7 @@
 
   const router = useRouter()
 
-  // onMounted(()=>{
-  //   setTimeout(()=>{
-  //     // 编程式路由导航:让路由实现跳转
-  //     router.push('/news')
-  //   },3000)
-  // })
+  onMounted(()=)
 </script>
 
 <style scoped>
