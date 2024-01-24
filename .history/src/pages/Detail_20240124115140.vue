@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts" name="About">
-  defineProps(['id','title','content'])
+  defineProps(['a','b','c'])
 </script>
 
 <style scoped>

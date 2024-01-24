@@ -10,7 +10,7 @@
         <RouterLink 
         :to="{
           name:'detailc',
-          query:{
+          :{
             id:news.id,
             title:news.title,
             content:news.content,

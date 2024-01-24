@@ -30,16 +30,14 @@ const router = createRouter({
         //props:true
 
         // 第二种写法： 函数写法，可以自己决定将什么作为props给路由组件
-         props(route){
-           return route.query
-         }
+        //  props(route){
+        //    return route.query
+        //  }
 
         // 第三种写法：对象写法，可以自己决定将什么作为props给路由组件
-        // props:{
-        //   a:100,
-        //   b:200,
-        //   c:300
-        // }
+        props:{
+          a；100,
+        }
       }
     ]
    },

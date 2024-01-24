@@ -1,13 +1,13 @@
 <template>
   <ul class="news-list">
-    <li>编号：{{id}}</li>
-    <li>标题：{{title}}</li>
-    <li>内容：{{content}}</li>
+    <li>编号：{{a}}</li>
+    <li>标题：{{b}}</li>
+    <li>内容：{{c}}</li>
   </ul>
 </template>
 
 <script setup lang="ts" name="About">
-  defineProps(['id','title','content'])
+  defineProps(['id','b','c'])
 </script>
 
 <style scoped>
