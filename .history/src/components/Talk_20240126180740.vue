@@ -2,21 +2,22 @@
   <div class="talk">
     <button @click="getTalk">获取一句话</button>
     <ul>
-      <li v-for="talk in talkList" :key="talk.id">{{talk.title}}</li>
+      <li v-for="talk in talkStore.$state.talkList" :key="talk.id">{{talk.title}}</li>
     </ul>
   </div>
 </template>
 
 <script setup lang="ts" name="Talk">
+  import {reactive} from 'vue'
+  import axios from "axios"
+  import {nanoid} from 'nanoid'
   import {useTalkStore} from '@/store/talk'
-  import { storeToRefs} from "pinia"
 
   const talkStore = useTalkStore()
-  const {talkList} = storeToRefs(talkStore)
 
   // 方法
   function getTalk(){
-    talkStore.getATalk()
+    talkStore.getAT
   }
 </script>
 

@@ -1,17 +1,15 @@
 import {defineStore} from 'pinia'
-import axios from 'axios'
-import {nanoid} from 'nanoid'
 
 export const useTalkStore = defineStore('talk',{
   actions:{
-    async getATalk(){
+    getATalk(){
       // 发请求，下面这行的写法是: 连续解构赋值+重命名
        let {data:{hitokoto:title}} = await axios.get('https://v1.hitokoto.cn/')
       // 把请求回来的字符串，包装成一个对象
        let obj = {id:nanoid(),title}
       //console.log(obj)
       // 放到数组中
-       this.talkList.unshift(obj)
+       talkList.unshift(obj)
       //console.log(result.data.hitokoto)
     }
   },

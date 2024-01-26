@@ -1,6 +1,5 @@
 import {defineStore} from 'pinia'
-import axios from 'axios'
-import {nanoid} from 'nanoid'
+import ax
 
 export const useTalkStore = defineStore('talk',{
   actions:{
@@ -11,7 +10,7 @@ export const useTalkStore = defineStore('talk',{
        let obj = {id:nanoid(),title}
       //console.log(obj)
       // 放到数组中
-       this.talkList.unshift(obj)
+       talkList.unshift(obj)
       //console.log(result.data.hitokoto)
     }
   },
