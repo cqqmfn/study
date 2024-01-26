@@ -6,9 +6,9 @@ export const useCountStore = defineStore('count',{
     increment(value){
       console.log('increment被调用了',value)
       if(this.sum < 10){
-        // 修改数据（this是当前的store）
-        // console.log(this.sum)
-        this.sum += value
+      // 修改数据（this是当前的store）
+      // console.log(this.sum)
+      this.sum += value
       }
     }
   },

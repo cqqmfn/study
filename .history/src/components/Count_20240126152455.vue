@@ -41,7 +41,7 @@
       // })
     
     // 第三种修改方式
-    countStore.increment(n.value)
+    //countStore.increment(n.value)
     }
   function minus(){
     

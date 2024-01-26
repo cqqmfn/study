@@ -34,11 +34,12 @@
     // countStore.address = '桃花源'
 
     // 第二种修改方式:批量变更一次
-      // countStore.$patch({
-      //   sum:888,
-      //   school:'希望小学',
-      //   address:'桃花源'
-      // })
+    //   countStore.$patch({
+    //     sum:888,
+    //     school:'希望小学',
+    //     address:'桃花源'
+    //   })
+    // }
     
     // 第三种修改方式
     countStore.increment(n.value)

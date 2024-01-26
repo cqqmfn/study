@@ -5,9 +5,8 @@ export const useCountStore = defineStore('count',{
   actions:{
     increment(value){
       console.log('increment被调用了',value)
-      if(this.sum < 10){
+      if( this.sum < 10){
         // 修改数据（this是当前的store）
-        // console.log(this.sum)
         this.sum += value
       }
     }
@@ -16,8 +15,8 @@ export const useCountStore = defineStore('count',{
   state(){
     return {
       sum:6,
-      school:'Primary School',
-      address:'希望路20号'
+      school:'atguigu',
+      address:'宏福科技园'
     }
   }
 })

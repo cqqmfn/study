@@ -1,7 +1,6 @@
 <template>
   <div class="count">
     <h2>当前求和为：{{ countStore.sum }}</h2>
-    <h3>欢迎来到：{{ countStore.school }}，坐落于：{{ countStore.address }}</h3>
     <select v-model.number="n">
      <option value="1">1</option>
      <option value="2">2</option>
@@ -16,7 +15,7 @@
   import {ref,reactive} from 'vue'
   // 引入useCountStore
   import {useCountStore} from '@/store/count'
-  // 使用useCountStore，得到一个专门保存count相关的store
+  
   const countStore = useCountStore()
 
   // 数据
@@ -25,24 +24,8 @@
 
   // 方法
   function add(){
-    // 第一种修改方式
-    // countStore.sum += 1
-
-    // 第一种修改方式：会修改三次
-    // countStore.sum += 1
-    // countStore.school = '希望小学'
-    // countStore.address = '桃花源'
-
-    // 第二种修改方式:批量变更一次
-      // countStore.$patch({
-      //   sum:888,
-      //   school:'希望小学',
-      //   address:'桃花源'
-      // })
     
-    // 第三种修改方式
-    countStore.increment(n.value)
-    }
+  }
   function minus(){
     
   }
