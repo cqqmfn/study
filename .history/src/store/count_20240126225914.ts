@@ -22,7 +22,7 @@ export const useCountStore = defineStore('count',{
   },
   getters:{
     bigSum:state => state.sum * 10,
-    upperSchool():string{
+    upperSchool():{
       return this.school.toUpperCase()
     }
   }

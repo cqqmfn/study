@@ -15,15 +15,14 @@ export const useCountStore = defineStore('count',{
   // 真正存储数据的地方
   state(){
     return {
-      sum:3,
-      school:'primary school',
+      sum:1,
+      school:'Primary School',
       address:'希望路20号'
     }
   },
   getters:{
-    bigSum:state => state.sum * 10,
-    upperSchool():string{
-      return this.school.toUpperCase()
+    bigSum(state){
+      return state.sum
     }
   }
 })

@@ -16,14 +16,13 @@ export const useCountStore = defineStore('count',{
   state(){
     return {
       sum:3,
-      school:'primary school',
+      school:'primary School',
       address:'希望路20号'
     }
   },
   getters:{
-    bigSum:state => state.sum * 10,
-    upperSchool():string{
-      return this.school.toUpperCase()
+    bigSum(state){
+      return state.sum * 10
     }
   }
 })

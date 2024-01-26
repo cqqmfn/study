@@ -1,7 +1,7 @@
 <template>
   <div class="count">
     <h2>当前求和为：{{ sum }}，放大10倍后：{{ bigSum }}</h2>
-    <h3>欢迎来到：{{ school }}，坐落于：{{ address }},大写：{{ upperSchool }}</h3>
+    <h3>欢迎来到：{{ school }}，坐落于：{{ address }},da</h3>
     <select v-model.number="n">
      <option value="1">1</option>
      <option value="2">2</option>
