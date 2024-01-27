@@ -23,14 +23,9 @@ import {nanoid} from 'nanoid'
 //   }
 // })
 
-import {reactive} from 'vue'
 export const useTalkStore = defineStore('talk',()=>{
-  // talkList就是state
-  const talkList = reactive(
-    JSON.parse(localStorage.getItem('talkList') as string) || []
-  )
 
-    // getATalk函数相当于action
+    // getATalk函数
     async function getATalk(){
       // 发请求，下面这行的写法是: 连续解构赋值+重命名
        let {data:{hitokoto:title}} = await axios.get('https://v1.hitokoto.cn/')
@@ -38,8 +33,7 @@ export const useTalkStore = defineStore('talk',()=>{
        let obj = {id:nanoid(),title}
       //console.log(obj)
       // 放到数组中
-       talkList.unshift(obj)
+       this.talkList.unshift(obj)
       //console.log(result.data.hitokoto)
     }
-    return {talkList,getATalk}
 })

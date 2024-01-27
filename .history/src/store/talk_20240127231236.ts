@@ -38,8 +38,7 @@ export const useTalkStore = defineStore('talk',()=>{
        let obj = {id:nanoid(),title}
       //console.log(obj)
       // 放到数组中
-       talkList.unshift(obj)
+       this.talkList.unshift(obj)
       //console.log(result.data.hitokoto)
     }
-    return {talkList,getATalk}
 })

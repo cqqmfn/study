@@ -41,5 +41,5 @@ export const useTalkStore = defineStore('talk',()=>{
        talkList.unshift(obj)
       //console.log(result.data.hitokoto)
     }
-    return {talkList,getATalk}
+    
 })
