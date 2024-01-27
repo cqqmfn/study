@@ -18,7 +18,7 @@ export const useTalkStore = defineStore('talk',{
   // 真正存储数据的地方
   state(){
     return {
-      talkList:JSON.parse(localStorage.getItem('talkList') as string) || []
+      talkList:JSON.parse(localStorage.getItem('talkList') as )
     }
   }
 })

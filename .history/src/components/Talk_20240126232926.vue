@@ -15,7 +15,7 @@
   const {talkList} = storeToRefs(talkStore)
   talkStore.$subscribe((mutate,state)=>{
     console.log('talkStore里面保存的数据发生了变化',mutate,state)
-    localStorage.setItem('talkList',JSON.stringify(state.talkList))
+    localStorage.setItem('talk')
   })
 
   // 方法
