@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts" name="App">
-  import { ref,readonly,reactive,shallowReadonly } from 'vue'
+  import { ref,readonly,reactive } from 'vue'
 
   let sum1 = ref(0)
   let sum2 = readonly(sum1)
@@ -24,7 +24,7 @@
       price:100
     }
   })
-  let car2 = shallowReadonly(car1)
+  let car2 = readonly(car1)
 
   function changeSum1(){
     sum1.value += 1

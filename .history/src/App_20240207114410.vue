@@ -24,7 +24,7 @@
       price:100
     }
   })
-  let car2 = shallowReadonly(car1)
+  let car2 = readonly(car1)
 
   function changeSum1(){
     sum1.value += 1

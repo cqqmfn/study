@@ -1,0 +1,29 @@
+<template>
+  <div class="app">
+    <h2>当前求和为：{{ sum }}</h2>
+    <button @click="changeSum">点我sum+1</button>
+  </div>
+</template>
+
+<script setup lang="ts" name="App">
+  import { ref,readonly } from 'vue'
+
+  let sum = ref(0)
+  let sum2 =
+
+  function changeSum(){
+    sum.value += 1
+  }
+</script>
+
+<style scoped>
+  .app {
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    padding: 10px;
+  }
+  button {
+    margin: 0 5px
+  }
+</style>
