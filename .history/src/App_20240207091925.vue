@@ -12,6 +12,7 @@
     <button @click="changeBrand">修改品牌</button>
     <button @click="changeColor">修改颜色</button>
     <button @click="changeEngine">修改发动机</button>
+    <button @click="changeCar">修改整个车</button>
   </div>
 </template>
 
@@ -23,7 +24,7 @@
     name:'张三',
     age: 18
   })
-  let car = shallowReactive({
+  let car = reactive({
     brand:'奔驰',
     options:{
       color:'红色',
@@ -50,7 +51,10 @@
     car.options.color = '紫色'
   }
   function changeEngine (){
-    car.options.engine = 'V12'
+    car.options.engine = ''
+  }
+  function changeCar (){
+
   }
 </script>
 
@@ -60,8 +64,5 @@
     border-radius: 10px;
     box-shadow: 0 0 10px;
     padding: 10px;
-  }
-  button {
-    margin: 0 5px
   }
 </style>

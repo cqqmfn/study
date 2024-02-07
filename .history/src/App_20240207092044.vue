@@ -23,7 +23,7 @@
     name:'张三',
     age: 18
   })
-  let car = shallowReactive({
+  let car = reactive({
     brand:'奔驰',
     options:{
       color:'红色',
