@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts" name="App">
-  import {ref} from 'vue'
+  import {}
   import useMsgRef from './useMsgRef'
 
   // 使用Vue提供的默认ref定义响应式数据，数据一变，页面就更新

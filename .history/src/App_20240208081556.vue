@@ -1,0 +1,26 @@
+<template>
+  <div class="app">
+    <h2>姓名：{{ person.name }}</h2>
+    <h2>年龄：{{ person.age }}</h2>
+    <button @click="person.age += 1">修改年龄</button>
+    <hr>
+    <h2>{{ car2 }}</h2>
+    <button @click="car2.price += 10">点我价格+10</button>
+  </div>
+</template>
+
+<script setup lang="ts" name="App">
+
+</script>
+
+<style scoped>
+  .app {
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    padding: 10px;
+  }
+  button {
+    margin: 0 5px
+  }
+</style>

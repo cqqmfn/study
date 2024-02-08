@@ -6,15 +6,17 @@
 </template>
 
 <script setup lang="ts" name="App">
-  import {ref} from 'vue'
-  import useMsgRef from './useMsgRef'
+  import {ref,customRef} from 'vue'
 
   // 使用Vue提供的默认ref定义响应式数据，数据一变，页面就更新
-  // let msg = ref('你好')
- 
-  // 使用useMsgRef来定义一个响应式数据且有延迟效果
-  let {msg} = useMsgRef('你好',2000)
-  
+  let msg = ref('你好')
+
+  // 使用Vue提供的customRef定义响应式数据
+  let msg = customRef(()=>{
+    return {
+      
+    }
+  })
 </script>
 
 <style scoped>
