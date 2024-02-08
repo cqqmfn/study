@@ -31,7 +31,7 @@
   console.log(car2)
 
   let mockJs = markRaw(mockjs)
-  
+  console.log(mockjs2)
   // car.price += 1
   // car.price += 1
   // car.price += 1

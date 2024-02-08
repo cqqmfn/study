@@ -30,8 +30,8 @@
   console.log(car)
   console.log(car2)
 
-  let mockJs = markRaw(mockjs)
-  
+  let mockJs = reactive(mockjs)
+  console.log(mockjs2)
   // car.price += 1
   // car.price += 1
   // car.price += 1

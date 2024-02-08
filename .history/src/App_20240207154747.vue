@@ -11,7 +11,6 @@
 
 <script setup lang="ts" name="App">
   import { reactive,toRaw,markRaw } from 'vue'
-  import mockjs from 'mockjs'
   
   // toRaw
   let person = reactive({
@@ -24,14 +23,11 @@
   // console.log('原始数据',rawPerson)
 
   // markRaw
-  let car = markRaw({brand:'奔驰',price:100})
+  let car = markRaw({brand:'奔驰',price:100}
   let car2 = reactive(car)
 
   console.log(car)
   console.log(car2)
-
-  let mockJs = markRaw(mockjs)
-  
   // car.price += 1
   // car.price += 1
   // car.price += 1
