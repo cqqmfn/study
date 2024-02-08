@@ -16,10 +16,9 @@
     /* background-color: #ddd; */
     border-radius: 10px;
     padding: 5px;
-    /* box-shadow: 0 0 10px; */
+    box-shadow: 0 0 10px;
     width: 400px;
     height: 400px;
-    filter: saturate(200%);
   }
   img {
     width: 180px;
