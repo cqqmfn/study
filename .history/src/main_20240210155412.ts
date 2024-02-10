@@ -23,7 +23,7 @@ app.directive('beauty',(element,{value})=>{
 // 挂载应用
 app.mount('#app')
 
-// 卸载应用
+// xie'zai'y
 setTimeout(() => {
   app.unmount()
 },2000)

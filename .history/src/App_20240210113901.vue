@@ -1,13 +1,12 @@
 <template>
   <div class="app">
-    <h2>我是App组件{{ x }}</h2>
-    <Hello/>
+    <h2>我是App组件</h2>
     <Child/>
   </div>
 </template>
 
 <script setup lang="ts" name="App">
-  import Child from './Child.vue'
+  import Child from 
 </script>
 
 <style>

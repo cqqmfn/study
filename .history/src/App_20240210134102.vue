@@ -1,7 +1,6 @@
 <template>
-  <div class="app">
-    <h2>我是App组件{{ x }}</h2>
-    <Hello/>
+  。app
+    <h2>我是App组件</h2>
     <Child/>
   </div>
 </template>

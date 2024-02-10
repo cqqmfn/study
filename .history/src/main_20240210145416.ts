@@ -11,19 +11,9 @@ app.config.globalProperties.x = 99
 
 declare module 'vue' {
   interface ComponentCustomProperties {
-    x: number
+    x: 
   }
 }
-app.directive('beauty',(element,{value})=>{
-  element.innerText += value
-  element.style.color = 'green'
-  element.style.backgroundColor = 'yellow'
 
-})
 // 挂载应用
 app.mount('#app')
-
-// 卸载应用
-setTimeout(() => {
-  app.unmount()
-},2000)

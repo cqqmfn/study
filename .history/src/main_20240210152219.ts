@@ -14,16 +14,8 @@ declare module 'vue' {
     x: number
   }
 }
-app.directive('beauty',(element,{value})=>{
-  element.innerText += value
-  element.style.color = 'green'
-  element.style.backgroundColor = 'yellow'
+app.directive('beauty',(element,{val})=>{
 
 })
 // 挂载应用
 app.mount('#app')
-
-// 卸载应用
-setTimeout(() => {
-  app.unmount()
-},2000)
